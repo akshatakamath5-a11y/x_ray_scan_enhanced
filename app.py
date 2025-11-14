@@ -7,7 +7,7 @@ import joblib
 import requests
 
 # Load ML model from pickle file
-clf = joblib.load('dsb_project_v6.pkl')  # Change if your model file is different
+clf = joblib.load('dsb_project_v5.pkl')  # Change if your model file is different
 
 def preprocess_image(file):
     img = Image.open(file).convert('L').resize((128, 128))
